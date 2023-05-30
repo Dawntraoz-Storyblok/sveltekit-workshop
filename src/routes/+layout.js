@@ -2,6 +2,7 @@ import Feature from '../components/Feature.svelte';
 import Grid from '../components/Grid.svelte';
 import Page from '../components/Page.svelte';
 import Hero from '../components/Hero.svelte';
+import Article from '../components/Article.svelte';
 import Teaser from '../components/Teaser.svelte';
 import { apiPlugin, storyblokInit, useStoryblokApi } from '@storyblok/svelte';
 
@@ -16,6 +17,7 @@ export async function load() {
 			page: Page,
 			teaser: Teaser,
 			hero: Hero,
+			article: Article,
 		},
 		https: true,
     apiOptions: {
